@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+   /* background-color: #3b576d;*/
+   font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+}
+
+header .logo{
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFF;
+}
+header .menu{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+header .menu-line{
+    height: 3px;
+    background-color: #FFF;
+}
+
+.container{
+    display: flex;
+    height: 100vh;
+}
+
+.container .leftside{
+    background-color: #3b576d;
+    flex: 1;
+    
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+
+}
+.container .rightside{
+    background-image: url('../images/WhatsApp\ Image\ 2022-05-19\ at\ 09.18.19.jpeg');
+    background-size: cover;
+    background-position: center top;
+    flex: 1;
+}
+footer{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 20px;
+    color: #FFF;
+    font-size: 13px;
+    opacity: 0.7;
+}
+footer a{
+    color: #FFF;
+    
+}
+.container .info{
+    color: white;
+
+
+}
+.container .info .buttom a{
+    display: inline-block;
+    background-color: #FFF;
+    color: #3b576d;
+    padding: 20px 40px;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-shadow: 0px 0px 10px #111;
+    border-radius: 10px;
+}
+.container .info .buttom a.light{
+    color: #FFF;
+    background-color: #3b576d;
+
+}
+.container .info .buttom a:hover{
+    opacity: 0.8;
+}
+.container .info .profession{
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 17px;
+}
+.container .info .name{
+    font-weight: bold;
+    font-size: 80px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+
+@media (max-width:950px){
+    .container{
+        flex-direction: column;
+
+    }
+    .container .leftside{
+        flex: none;
+        padding: 30px 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    header{
+        position: initial;
+        background-color: #3b576d;
+    }
+    header .menu-line{
+        background-color: white;
+    }
+    footer{
+        position: initial;
+        color: #CCC;
+        opacity: 1;
+    };
+
+}
+
+@media (max-width: 490px){
+    .container .leftside .info .name{
+        font-size: 50px;
+
+    }
+    .container .leftside .buttom a{
+        display: block;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+}
